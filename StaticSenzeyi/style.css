@@ -257,7 +257,10 @@
     text-decoration: none;
     color: #fff;
   }
+
+
 /* Project Style  */
+
 .project-container {
   height: 100vh;
 
@@ -519,6 +522,26 @@ footer ul {
       width: 100%;
       margin-bottom: 15px;
     }
+
+    /* Projects Styles Media  */
+    .proj-top, .proj-down {
+      display: block;
+      padding: 0px 50px 0px 70px;
+    }
+    /* .proj-head {
+      margi
+    } */
+    .project-content {
+      padding: 30px 0px 50px 0px;
+    }
+
+    .project-container {
+      height: auto;
+    }
+    .proj {
+      margin-bottom: 20px;
+    }
+
 
     /* Contact Styles media  */
 
