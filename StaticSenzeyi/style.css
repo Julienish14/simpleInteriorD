@@ -290,7 +290,9 @@
     #click:checked ~ .menu i:before{
       content: "\f00d";
     }
-   
+    .home-col-left{
+      margin-top: 100px;
+    }
 
     /* About Styles  */
     .about-container{
