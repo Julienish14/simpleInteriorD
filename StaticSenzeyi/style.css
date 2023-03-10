@@ -308,6 +308,13 @@
   text-decoration: none;
   color: black;
 }
+.proj a:hover{
+  transition-duration: 2s;
+  color: rgb(170, 170, 247);
+}
+.proj img:hover{
+  transform: scale(1.1);
+}
 
 /* Contact Style  */
 
@@ -391,6 +398,14 @@
   width: 55%;
   margin: auto;
 
+}
+
+.foot-center a{
+  text-decoration: none;
+  color: black;
+}
+.foot-center ul li a:hover{
+  color: whitesmoke;
 }
 .foot-content div h3 {
   margin-bottom: 5px;
@@ -594,5 +609,9 @@ footer ul {
     }
     .foot-closer {
       margin-top: 50px;
+    }
+    .foot-center ul li{
+      margin-bottom: 10px;
+    
     }
   }
