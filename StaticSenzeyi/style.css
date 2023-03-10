@@ -7,19 +7,13 @@
   }
   
   nav {
-    /* height: 80px;
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; */
-     padding: 0rem calc((100vw - 1300px) / 2); 
-
     display: flex;
     height: 80px;
     width: 100%;
     background: black;
     align-items: center;
     justify-content: space-between;
+    padding: 0rem calc((100vw - 1300px) / 2); 
     flex-wrap: wrap;
     position: fixed;
   }
@@ -100,6 +94,10 @@
     background: #fff;
     cursor: pointer;
     border-radius: 50px;
+  }
+  button a {
+    text-decoration: none;
+    color: black;
   }
   
   button:hover {
@@ -201,55 +199,178 @@
     height: 100vh;
   }
   .price-head {
-    padding: 20px 50px;
+    padding: 100px 0px 50px 340px;
+  }
+  .price-head h4 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  .price-head p {
+    font-size: 1.5rem;
   }
   .price-content {
-    padding: 20px 50px;
+    padding: 0% 20%;
     display: flex;
     justify-content: space-between;
   }
   .prc {
     width: 30%;
-    height: 450px;
+    height: 600px;
     border: 2px solid darkblue;
     border-radius: 10px;
     padding: 30px;
     background: #838080;
   }
+  .prc h3 {
+    font-size: 1.4rem;
+  }
   .prc img {
     width: 100%;
-    height: 40%;
+    height: 30%;
     margin-bottom: 10px;
     border-radius: 5px;
+  }
+  .price-two img {
+    width: 100%;
+    height: 40%;
   }
   .price-detail {
     margin: 30px 10px;
     text-align: center;
   }
   .price-detail span {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
   }
+  .price-detail p {
+    margin-top: 15px;
+  }
   .price-btn {
-    margin-top: 40px;
+    margin-top: 50%;
     padding: 5px;
     border: 2px solid rgb(19, 16, 16);
     border-radius: 10px;
   }
+
   .price-btn a {
     text-decoration: none;
     color: #fff;
   }
+
+/* Contact Style  */
+
+.contact {
+  color: wheat;
+  background: #111;
+}
+
+.contact-container {
+  height: 100vh;
+  padding-top: 150px;
+}
+
+.contact-content {
+  width: 60%;
+  height: 75vh;
+  margin: 0px auto;
+  padding: 100px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-address {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin:  50px auto;
+}
+
+.contact-address i{
+  font-size: 2rem;
+  margin: 10px;
+}
+.contact-form {
+  width: 60%;
+  padding: 30px;
+  margin: auto;
+  border: 1px solid red;
+}
+.contact-form input, textarea{
+  border: none;
+  border-bottom: 2px solid rgb(216, 216, 224);
+  width: 90%;
+  background: transparent;
+  margin-bottom: 50px;
+  color: white;
+  padding: 10px 0px;
+}
+
+/* Footer Styles  */
+
+.footer-container {
+  background: #838080;
+  height: 25vh;
+  position: relative;
+  padding-top: 50px ;
+
+}
+
+.foot-logo{
+ margin-left: 130px;
+ position: absolute;
+ top: 35%;
+}
+.foot-logo a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+}
+.foot-logo span {
+  color: red;
+}
+
+.foot-content {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: auto;
+
+}
+.foot-content div h3 {
+  margin-bottom: 5px;
+}
+
+footer ul {
+  list-style: none;
+}
+.foot-right {
+  text-align: center;
+}
+.foot-right i {
+  font-size: 1.5rem;
+}
+.social-icon {
+  margin-top: 20px;
+}
+.social-icon i{
+  margin: 0px 5px;
+}
+
+.foot-closer {
+  margin-top: 10px;
+  text-align: center;
+}
+
   @media screen and (max-width: 768px) {
     .home-container {
       grid-template-columns: 1fr;
       height: auto;
     }
-    .nav-items{
+    .nav-items, .home-container br{
         display: none;
-    }
-    br{
-      display: none;
     }
     button{
       margin: auto;
@@ -259,7 +380,7 @@
       top: 80px;
       left: -100%;
       background: #111;
-      height: 100vh;
+      height: 50vh;
       width: 100%;
       text-align: center;
       display: block;
@@ -305,9 +426,17 @@
     }
     .about-col-left {
       padding: 0px;
+      text-align: center;
+    }
+    .about-col-left h3{
+      margin-bottom: 10px;
     }
     .about-col-right {
       padding: 20px 0px 0px 0px;
+      text-align: center;
+    }
+    .about-col-right p{
+      margin-bottom: 15px;
     }
 
     /* Services Styles  */
@@ -336,6 +465,9 @@
       height: auto;
       padding: 10px 50px;
     }
+    .price-head {
+      padding: 50px 0px;
+    }
     .price-content {
       display: block;
       padding: 0px;
@@ -344,5 +476,47 @@
     .prc {
       width: 100%;
       margin-bottom: 15px;
+    }
+
+    /* Contact Styles media  */
+
+    .contact-container {
+      padding: 80px 0px 40px 0px;
+      height: auto;
+    }
+    .contact-content {
+      width: 90%;
+      height: auto;
+      padding: 20px 0px 0px 0px;
+      margin-bottom: 50px;
+    }
+    .contact-address {
+      display: block;
+      width: 100%;
+    }
+    .contact-form {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+
+    /* Footer Styles Media  */
+    .foot-logo {
+      top: 20px;
+    }
+    .footer-container{
+      height: 50%;
+     padding-bottom: 40px;
+
+    }
+    .foot-content {
+      display: block;
+      text-align: center;
+      margin-top: 100px
+    } 
+    .foot-content div {
+      margin-top: 30px;
+    }
+    .foot-closer {
+      margin-top: 50px;
     }
   }
