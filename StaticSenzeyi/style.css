@@ -7,12 +7,21 @@
   }
   
   nav {
-    height: 80px;
+    /* height: 80px;
     background: black;
     display: flex;
     justify-content: space-between;
+    align-items: center; */
+     padding: 0rem calc((100vw - 1300px) / 2); 
+
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: black;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
   }
   nav ul{
     display: flex;
@@ -59,7 +68,7 @@
   .home-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 95vh;
+    height: 100vh;
     padding: 3rem calc((100vw - 1300px) / 2);
   }
   
@@ -108,7 +117,7 @@
   
   .home-image {
     width: 80%;
-    height: 90%;
+    height: 70%;
     border-radius: 10%;
   }
 
