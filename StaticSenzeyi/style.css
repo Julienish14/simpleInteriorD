@@ -329,11 +329,9 @@
 }
 
 .contact-content {
-  width: 60%;
   height: 80vh;
   margin: 0px auto;
-  padding: 100px;
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
   background-color: black;
   border-radius: 10px;
   text-align: center;
@@ -343,7 +341,7 @@
   width: 50%;
   display: flex;
   justify-content: space-between;
-  margin:  50px auto;
+  margin: 50px auto;
 }
 
 .contact-address i{
@@ -356,16 +354,49 @@
   margin: auto;
   background: rgb(21, 21, 26);
   border-radius: 10px;
+  text-align: left;
+}
+
+.form {
+  position: relative;
+}
+.form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form .input-form {
+  position: relative;
+}
+.form .input-form input, textarea{
+  border: none;
+  border-bottom: 1px solid white;
+  letter-spacing: 1px;
+  width: 90%;
+  background-color: transparent;
+  color: white;
+  padding: 5px 0px;
+  outline: none;
+}
+
+
+.contact-form {
+  width: 60%;
+  padding: 30px;
+  margin: auto;
+  background: rgb(21, 21, 26);
+  border-radius: 10px;
 }
 .contact-form input, textarea{
   border: none;
   border-bottom: 2px solid rgb(216, 216, 224);
-  border-radius: 5px;
   width: 90%;
   background: transparent;
   margin-bottom: 50px;
   color: white;
   padding: 10px 0px;
+  outline: none;
 }
 
 /* Footer Styles  */
@@ -435,7 +466,67 @@ footer ul {
   text-align: center;
 }
 
-  @media screen and (max-width: 768px) {
+@media only screen and (max-width: 1366px) {
+  /* Price Style for Laptop screen  */
+
+  .price-head {
+    padding: 30px 0px 50px 120px;
+  }
+  .price-content {
+    padding: 0% 10%;
+  }
+  .price-head h4{
+    font-size: 2rem
+  }
+  .prc {
+    height: 450px;
+  }
+  .price-btn {
+  margin-top: 10%;
+  }
+  .price-detail {
+    margin: 10px;
+  }
+
+  /* Project Style for Laptop Screen  */
+
+  .project-container {
+    height: 150vh;
+  }
+  .project-content {
+    padding: 30px 100px 0px 100px;
+  }
+
+  /* Contact Page Style for Laptop Screen  */
+
+  .contact-container {
+    padding-top: 80px;
+  }
+  .contact-content {
+    width: 80%;
+    padding: 30px 100px 0px 100px;
+  }
+  .contact-address {
+    margin: 20px auto;
+  }
+ 
+  .contact-form input, textarea { 
+    margin-bottom: 20px;
+  }
+  /* Footer Style for Laptop Screen  */
+
+  .footer-container {
+    height: 35vh;
+  }
+  .foot-logo {
+    margin-left: 30px;
+  }
+  .foot-closer {
+    margin-top: 5px;
+  }
+}
+
+  @media only screen and (max-width: 768px) {
     .home-container {
       grid-template-columns: 1fr;
       height: auto;
@@ -615,3 +706,5 @@ footer ul {
     
     }
   }
+
+ 
