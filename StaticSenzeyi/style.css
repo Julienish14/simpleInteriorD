@@ -10,7 +10,13 @@
     display: flex;
     height: 80px;
     width: 100%;
-    background: black;
+    /* background: black; */
+    /* background-image: url(img/nav-back.png); */
+
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),url(img/background-img.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 0rem calc((100vw - 1300px) / 2); 
@@ -57,7 +63,9 @@
   }
   
   .home {
-    background: black
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),url(img/background-img.webp);
+    background-size: cover;
+    background-position: center;
   }
   
   .home-container {
