@@ -60,9 +60,10 @@
   }
   
   .home {
-    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),url(img/background-img.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.80)),url(img/background-img.webp);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
   }
   
   .home-container {
@@ -94,11 +95,12 @@
   }
   
   button {
-    padding: 1rem 3rem;
+    padding: 0.5rem 3rem;
     font-size: 1rem;
+    font-weight: 1000;
     border: none;
-    color: darkred;
-    background: #fff;
+    color: whitesmoke;
+    background: darkred;
     cursor: pointer;
     border-radius: 50px;
   }
